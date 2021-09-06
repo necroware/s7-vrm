@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MMX-VRM"
-Date "2021-08-22"
-Rev "0.1"
+Date "2021-09-06"
+Rev "0.2"
 Comp "Necroware"
 Comment1 "by Scorp"
 Comment2 ""
