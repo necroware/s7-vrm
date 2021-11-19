@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "MMX-VRM"
+Title "s7-vrm"
 Date "2021-11-19"
 Rev "0.2"
 Comp "Necroware"
@@ -19,7 +19,7 @@ U 1 1 60BAADCB
 P 2650 2800
 F 0 "J1" H 2700 1967 50  0000 C CNN
 F 1 "Conn_02x15_Row_Letter_First" H 2700 3626 50  0001 C CNN
-F 2 "mmx-vrm:EDGE_30-pin" H 2650 2800 50  0001 C CNN
+F 2 "s7-vrm:EDGE_30-pin" H 2650 2800 50  0001 C CNN
 F 3 "~" H 2650 2800 50  0001 C CNN
 F 4 "C132129" H 2650 2800 50  0001 C CNN "LCSC"
 	1    2650 2800
