@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "MMX-VRM"
-Date "2021-09-06"
+Date "2021-11-16"
 Rev "0.2"
 Comp "Necroware"
 Comment1 "by Scorp"
@@ -380,7 +380,7 @@ Wire Wire Line
 	6050 2350 6450 2350
 Connection ~ 6450 2350
 Wire Wire Line
-	6450 2350 6900 2350
+	6450 2350 6600 2350
 Connection ~ 4000 2150
 Wire Wire Line
 	4000 2150 4550 2150
@@ -414,7 +414,7 @@ Wire Wire Line
 	6250 2150 6250 3350
 Connection ~ 6250 3350
 Wire Wire Line
-	6250 3350 6900 3350
+	6250 3350 6600 3350
 Wire Wire Line
 	7500 2350 7500 2800
 Connection ~ 7500 2350
@@ -436,4 +436,26 @@ F 4 "C352163" H 2700 4100 50  0001 C CNN "LCSC"
 	1    2700 4100
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:C C3
+U 1 1 6192E569
+P 6600 2650
+F 0 "C3" H 6600 2750 50  0000 L CNN
+F 1 "10nF" H 6600 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" H 6638 2500 50  0001 C CNN
+F 3 "~" H 6600 2650 50  0001 C CNN
+F 4 "C431006" H 6600 2650 50  0001 C CNN "LCSC"
+	1    6600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2350 6600 2500
+Connection ~ 6600 2350
+Wire Wire Line
+	6600 2350 6900 2350
+Wire Wire Line
+	6600 2800 6600 3350
+Connection ~ 6600 3350
+Wire Wire Line
+	6600 3350 6900 3350
 $EndSCHEMATC
