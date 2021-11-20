@@ -42,4 +42,6 @@ SW1     |   1   | C52648   | DIP6 Switch THT 3 buttons 9.78x9.8mm 2.54mm
 U1, U2  |   2   | C74188   | LM2596S-ADJ DC-DC Converter SMD TO-263-5
 
 ## Links
-* [Intel Pentium Mainboard Design Guidelines](http://ps-2.kev009.com/madmax/madmax/files/cpudata/24318702.pdf)
+* [Intel Pentium Mainboard Design Guidelines](./docs/24318702.pdf)
+* [LM2596S-ADJ datasheet](./docs/XL2596S-12E1_C74191.pdf)
+
