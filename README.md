@@ -1,4 +1,4 @@
-# Necroware's S7-VRM
+# Necroware's MMX-VRM
 
 This project is a Voltage Regulator Module for the Socket 7 mainboards as
 defined by Intel in it's Pentium® Processor Flexible Motherboard Design
