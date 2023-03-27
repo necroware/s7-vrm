@@ -49,7 +49,13 @@
           "min_clearance": 0.39999999999999997
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -169,8 +175,15 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
-      "via_dimensions": [],
+      "track_widths": [
+        0.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
@@ -453,15 +466,11 @@
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(C11-Pad1)"
+        "pattern": "/BG"
       },
       {
         "netclass": "Power",
-        "pattern": "Net-(Q1-Pad1)"
-      },
-      {
-        "netclass": "Power",
-        "pattern": "Net-(Q2-Pad1)"
+        "pattern": "/TG"
       }
     ]
   },
