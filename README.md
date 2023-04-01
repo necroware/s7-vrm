@@ -5,7 +5,7 @@ defined by Intel in it's Pentium® Processor Flexible Motherboard Design
 Guidelines. You can upgrade VRM capable Socket 7 mainboards with this module to
 be able to use dual-voltage CPUs like Intel Pentium MMX, AMD K6, AMD K6-2 etc.
 
-![GamePort Adapter](./photo.jpg)
+![S7-VRM](./photo.jpg)
 
 ## Voltage selection
 

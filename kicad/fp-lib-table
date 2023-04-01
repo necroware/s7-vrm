@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "s7-vrm")(type "KiCad")(uri "/home/scorp/Projects/necroware/s7-vrm/kicad")(options "")(descr ""))
+)
