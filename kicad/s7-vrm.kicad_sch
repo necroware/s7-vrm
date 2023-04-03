@@ -6,7 +6,7 @@
 
   (title_block
     (title "S7-VRM")
-    (date "2023-04-01")
+    (date "2023-04-03")
     (rev "0.4")
     (company "Necroware")
     (comment 1 "by Scorp")
@@ -1758,7 +1758,7 @@
   (symbol (lib_id "Device:R") (at 172.085 123.825 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060e41091)
-    (property "Reference" "R4" (at 173.355 122.555 0)
+    (property "Reference" "R3" (at 173.355 122.555 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1K" (at 172.085 125.095 90)
@@ -1778,7 +1778,7 @@
     (instances
       (project "s7-vrm"
         (path "/30f15357-ce1d-48b9-93dc-7d9b1b2aa048"
-          (reference "R4") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -1787,7 +1787,7 @@
   (symbol (lib_id "Device:R") (at 172.085 100.965 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060e4143a)
-    (property "Reference" "R3" (at 170.815 95.885 0)
+    (property "Reference" "R4" (at 170.815 95.885 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "3K" (at 172.085 102.235 90)
@@ -1807,7 +1807,7 @@
     (instances
       (project "s7-vrm"
         (path "/30f15357-ce1d-48b9-93dc-7d9b1b2aa048"
-          (reference "R3") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
