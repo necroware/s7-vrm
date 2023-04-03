@@ -2422,7 +2422,7 @@
     (property "Reference" "C7" (at 116.205 108.585 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "220nF" (at 116.205 113.665 0)
+    (property "Value" "220n" (at 116.205 113.665 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder" (at 117.1702 114.935 0)

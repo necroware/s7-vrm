@@ -58,14 +58,14 @@ C4, C5      | 2     | C407862  | 3300u capacitor TH Radial D10.0mm, P5.00mm
 C7          | 1     | C107186  | 220n capacitor SMD 1206
 C8          | 1     | C541493  | 39p capacitor SND 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
-D1          | 1     | C109000  | Diode
+D1          | 1     | C109000  | Switching diode
 J1          | 1     | C2897435 | Connector angled 02x15 pins 2.54mm 
 L1          | 1     | C230667  | 2,5µH inductor TH or SMD P10.0mm at least 15A
 Q1          | 1     | C13871   | NPN-Transistor with pull-up BEC
 Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
 R1, R2, R6  | 3     | C144515  | 15K resistor SMD 1206
-R3, R8      | 2     | C229609  | 3K resistor SMD 1206
-R4, R10     | 2     | C144508  | 1K resistor SMD 1206
+R3, R10     | 2     | C144508  | 1K resistor SMD 1206
+R4, R8      | 2     | C229609  | 3K resistor SMD 1206
 R5          | 1     | C3000607 | 21K resistor SMD 1206
 R7          | 1     | C229767  | 6,3K resistor SMD 1206
 R9          | 1     | C352163  | 0K resistor SMD 1206
