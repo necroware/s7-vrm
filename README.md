@@ -75,6 +75,11 @@ U1          | 1     | C235991  | NCP1579 DC-DC Controller
 If the NCP1579 is not available, probably ISL6545, NCP1587 or L6726 will work
 as well, but they haven't been tested yet.
 
+## License
+
+This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+International License.
+
 ## Links
-* [Intel Pentium Mainboard Design Guidelines](./docs/24318702.pdf)
+* [Intel Pentium Mainboard Design Guidelines](http://netwinder.osuosl.org/pub/misc/docs/i386/24318702.pdf)
 
