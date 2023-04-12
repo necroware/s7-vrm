@@ -8,9 +8,9 @@ be able to use dual-voltage CPUs like Intel Pentium MMX, AMD K6, AMD K6-2 etc.
 ![S7-VRM](./photo.jpg)
 
 Youtube Videos:
-Part 1: https://youtu.be/CMiGVQbMC5U
-Part 2: https://youtu.be/J0NLGfocviU
-Part 3: https://youtu.be/kBPp9EAIC8I
+- Part 1: https://youtu.be/CMiGVQbMC5U
+- Part 2: https://youtu.be/J0NLGfocviU
+- Part 3: https://youtu.be/kBPp9EAIC8I
 
 
 ## Voltage selection
