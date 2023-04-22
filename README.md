@@ -5,6 +5,9 @@ defined by Intel in it's Pentium® Processor Flexible Motherboard Design
 Guidelines. You can upgrade VRM capable Socket 7 mainboards with this module to
 be able to use dual-voltage CPUs like Intel Pentium MMX, AMD K6, AMD K6-2 etc.
 
+*Disclaimer: this VRM can damage your mainboard, CPU or both. Please use at your
+own risk.*
+
 ![S7-VRM](./photo.jpg)
 
 Youtube Videos:
@@ -12,26 +15,36 @@ Youtube Videos:
 - Part 2: https://youtu.be/J0NLGfocviU
 - Part 3: https://youtu.be/kBPp9EAIC8I
 
-
 ## Voltage selection
 
 Various voltages can be set using the SW1 switch on the module (0=off, 1=on):
 
 Voltage | Switches | CPU Examples
 --------|----------|-------------------------------------------
-  3.2V  |   0000   | AMD K6 (only 233 MHz)
-  2.9V  |   1000   | AMD K6, IBM 6x86MX
-  2.8V  |   0100   | Intel Pentium MMX, IBM 6x86L, Rise MP6
-  2.6V  |   1100   | ???
-  2.4V  |   0010   | AMD K6-2
-  2.3V  |   1010   | AMD K6-2
-  2.2V  |   0110   | AMD K6 / K6-2(+) / K6-3(+) (and mobile)
-  2.1V  |   1110   | AMD Mobile K6 / K6-2
-  2.0V  |   0001   | AMD Mobile K6 / K6-2(+) / K6-3(+)
-  1.9V  |   1001   | AMD K6-2E+
-  1.8V  |   1101   | AMD Mobile K6-2(+)
-  1.7V  |   0111   | AMD K6-2E+ / K6-3E+
-  1.6V  |   1111   | AMD K6-2E+ / K6-3E+
+  1.6V  |   0000   | AMD K6-2E+ / K6-3E+ / Mobile K6-2
+  1.8V  |   1000   |
+  2.0V  |   0100   | Cyrix MII (0,18µm version)
+  2.1V  |   0010   | 
+  2.2V  |   1100   | AMD Mobile K6 / K6-2(+) / K6-3(+)
+  2.3V  |   1010   | 
+  2.4V  |   0001   | AMD K6-2
+  2.5V  |   0110   |
+  2.6V  |   1001   | 
+  2.7V  |   1110   |
+  2.8V  |   0101   | Intel Pentium MMX, IBM 6x86L, Rise MP6 
+  2.9V  |   0011   | AMD K6, IBM 6x86MX
+  3.0V  |   1101   | 
+  3.1V  |   1011   | AMD K6@233 (needs actually 3.2V)
+  3.3V  |   0111   | Pentium 66-200 (Single Voltage)
+  3.5V  |   1111   | AMD K5, Winchip C6 / 2
+
+This VRM was designed primarily for dual voltage CPUs, like Pentium MMX and
+K6, but the module can be used for single voltage CPUs as well. For example
+3.3V can be used to power a non-MMX Pentium CPU. Also AMD K5 or Winchip CPUs
+can be used with 3.5V voltage, which will diverge from the 3.3V  I/O voltage
+supplied by a linear regulator on the mainboard. However those CPUs are
+tolerant to that difference in voltage and the VRM would take the most load
+from the on board linear voltage regulator and reduce the heat drastically. 
 
 ## Important remarks
 
@@ -61,19 +74,18 @@ C1, C15     | 2     | C13585   | 10u capacitor SMD 1206
 C2, C14     | 2     | C51205   | 4.7u capacitor SMD 1206
 C3, C6, C13 | 3     | C696845  | 0.1u capacitor SMD 1206
 C4, C5      | 2     | C407862  | 3300u capacitor TH Radial D10.0mm, P5.00mm
-C7          | 1     | C107186  | 220n capacitor SMD 1206
-C8          | 1     | C541493  | 39p capacitor SND 1206
+C7          | 1     | C274377  | 330n capacitor SMD 1206
+C8          | 1     | C107176  | 47p capacitor SMD 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
 D1          | 1     | C109000  | Switching diode
 J1          | 1     | C2897435 | Connector angled 02x15 pins 2.54mm 
 L1          | 1     | N/A      | 3.3µH inductor
 Q1          | 1     | C13871   | NPN-Transistor with pull-up BEC
 Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
-R1, R2, R6  | 3     | C144515  | 15K resistor SMD 1206
-R3, R10     | 2     | C144508  | 1K resistor SMD 1206
-R4, R8      | 2     | C229609  | 3K resistor SMD 1206
-R5          | 1     | C3000607 | 21K resistor SMD 1206
-R7          | 1     | C229767  | 6,3K resistor SMD 1206
+R1, R2, R5  | 3     | C2930406 | 12K resistor SMD 1206
+R3, R4, R8  | 3     | C229609  | 3K resistor SMD 1206
+R6          | 1     | C3000586 | 6K resistor SMD 1206
+R7          | 1     | C3000586 | 4.8k resistor SMD 1206
 R9          | 1     | C352163  | 0K resistor SMD 1206
 SW1         | 1     | C15781   | DIP6 Switch THT 4 buttons 2.54mm
 U1          | 1     | C235991  | NCP1579 DC-DC Controller
