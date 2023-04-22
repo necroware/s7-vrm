@@ -84,7 +84,7 @@ as well, but they haven't been tested yet.
 The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
 should work, but the sweet point is at around 3.3µH. The inductor can be self
 made by using a T50 ferrite toroid. For example T50-26 with permeability 75µ
-wrapped in 10 loops of 1mm coper.
+wrapped in 10 loops of 1.3 mm coper.
 
 ## Tested mainboards
 
