@@ -66,7 +66,7 @@ C8          | 1     | C541493  | 39p capacitor SND 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
 D1          | 1     | C109000  | Switching diode
 J1          | 1     | C2897435 | Connector angled 02x15 pins 2.54mm 
-L1          | 1     | C230667  | 2,5µH inductor TH or SMD P10.0mm at least 15A
+L1          | 1     | N/A      | 3.3µH inductor
 Q1          | 1     | C13871   | NPN-Transistor with pull-up BEC
 Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
 R1, R2, R6  | 3     | C144515  | 15K resistor SMD 1206
@@ -80,6 +80,25 @@ U1          | 1     | C235991  | NCP1579 DC-DC Controller
 
 If the NCP1579 is not available, probably ISL6545, NCP1587 or L6726 will work
 as well, but they haven't been tested yet.
+
+The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
+should work, but the sweet point is at around 3.3µH. The inductor can be self
+made by using a T50 ferrite toroid. For example T50-26 with permeability 75µ
+wrapped in 10 loops of 1mm coper.
+
+## Tested mainboards
+
+This module should run with all mainboards, which provide the VRM module header
+as specified in Intel Pentium Mainboard Design Guidelines. Most of such boards
+were based on Intel Triton (i430FX) and VIA Apolo Master (MV series) chipsets,
+but there were also quite a lot of later boards with newer chipsets (f.e.
+i430VX), which supported such an external VRM as well. So far this VRM was
+tested using various CPUs and voltages on following mainboards:
+
+Manufacturer | Model           
+-------------|---------------------
+Asus         | P/I-P55TP4XE(G)
+Gigabyte     | GA-586-ATE/P
 
 ## License
 
