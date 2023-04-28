@@ -60,7 +60,7 @@ Part        | Count | LCSC#    | Comment
 C1, C15     | 2     | C13585   | 10u capacitor SMD 1206
 C2, C14     | 2     | C51205   | 4.7u capacitor SMD 1206
 C3, C6, C13 | 3     | C696845  | 0.1u capacitor SMD 1206
-C4, C5      | 2     | C407862  | 3300u capacitor TH Radial D10.0mm, P5.00mm
+C4, C5      | 2     | C407963  | 2200u capacitor TH Radial D10.0mm, P5.00mm
 C7          | 1     | C107186  | 220n capacitor SMD 1206
 C8          | 1     | C541493  | 39p capacitor SND 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
