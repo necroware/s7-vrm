@@ -5,6 +5,13 @@ defined by Intel in it's Pentium® Processor Flexible Motherboard Design
 Guidelines. You can upgrade VRM capable Socket 7 mainboards with this module to
 be able to use dual-voltage CPUs like Intel Pentium MMX, AMD K6, AMD K6-2 etc.
 
+__WARNING:__ *inserting the module the wrong way around would put +12V on all
+critical lanes. It would destroy the mainboard, the CPU, the memory and all
+expansion cards. This can't happen on mainboards with VRM socket, because
+there it is not possible to insert it in reverse. On free standing VRM pinheader,
+it is may be a good idea to cut +12V pin 5 and the unused pin 22 to use them as
+a key.*
+
 ![S7-VRM](./photo.jpg)
 
 Youtube Videos:
