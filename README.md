@@ -97,6 +97,7 @@ need to use different resistors on the feedback:
 
 Part | LCSC#    | Comment
 -----|----------|--------------------------------------------
+U1   | C2657973 | ISL6545 DC-DC Controller
 R4   | C3000626 | 4,32K resistor SMD 1206
 R5   | C137309  | 33K resistor SMD 1206
 R6   | C137348  | 25K resistor SMD 1206
