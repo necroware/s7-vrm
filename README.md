@@ -85,13 +85,23 @@ R9          | 1     | C352163  | 0K resistor SMD 1206
 SW1         | 1     | C15781   | DIP6 Switch THT 4 buttons 2.54mm
 U1          | 1     | C235991  | NCP1579 DC-DC Controller
 
-If the NCP1579 is not available, probably ISL6545, NCP1587 or L6726 will work
-as well, but they haven't been tested yet.
-
 The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
 should work, but the sweet point is at around 3.3µH. The inductor can be self
 made by using a T50 ferrite toroid. For example T50-26 with permeability 75µ
 wrapped in 10 loops of 1.3 mm coper.
+
+If the NCP1579 is not available, probably ISL6545, NCP1587 or L6726 will work
+as well, but they haven't been tested yet. If you go with ISL6545, it has a
+different reference voltage of 0.6V instead of 0.8V as for NCP1579, so you
+need to use different resistors on the feedback:
+
+Part | LCSC#    | Comment
+-----|----------|--------------------------------------------
+R4   | C3000626 | 4,32K resistor SMD 1206
+R5   | C137309  | 33K resistor SMD 1206
+R6   | C137348  | 25K resistor SMD 1206
+R7   | C132649  | 10K resistor SMD 1206
+R8   | C870818  | 5K resistor SMD 1206
 
 ## Tested mainboards
 
