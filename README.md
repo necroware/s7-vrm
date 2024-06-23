@@ -8,12 +8,21 @@ be able to use dual-voltage CPUs like Intel Pentium MMX, AMD K6, AMD K6-2 etc.
 *Disclaimer: this VRM can damage your mainboard, CPU or both. Please use at your
 own risk.*
 
+__WARNING:__ *inserting the module the wrong way around would put +12V on all
+critical lanes. It would destroy the mainboard, the CPU, the memory and all
+expansion cards. This can't happen on mainboards with VRM socket, because
+there it is not possible to insert it in reverse. On free standing VRM pinheader,
+it is may be a good idea to cut +12V pin 5 and the unused pin 22 to use them as
+a key.*
+
+
 ![S7-VRM](./photo.jpg)
 
 Youtube Videos:
 - Part 1: https://youtu.be/CMiGVQbMC5U
 - Part 2: https://youtu.be/J0NLGfocviU
 - Part 3: https://youtu.be/kBPp9EAIC8I
+- Part 4: https://youtu.be/XV0b5Tvf5gY
 
 ## Voltage selection
 
@@ -74,24 +83,23 @@ C1, C15     | 2     | C13585   | 10u capacitor SMD 1206
 C2, C14     | 2     | C51205   | 4.7u capacitor SMD 1206
 C3, C6, C13 | 3     | C696845  | 0.1u capacitor SMD 1206
 C4, C5      | 2     | C407862  | 3300u capacitor TH Radial D10.0mm, P5.00mm
-C7          | 1     | C274377  | 330n capacitor SMD 1206
-C8          | 1     | C107176  | 47p capacitor SMD 1206
+C7          | 1     | C107186  | 220n capacitor SMD 1206
+C8          | 1     | C541493  | 39p capacitor SND 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
 D1          | 1     | C109000  | Switching diode
 J1          | 1     | C2897435 | Connector angled 02x15 pins 2.54mm 
 L1          | 1     | N/A      | 3.3µH inductor
-Q1          | 1     | C13871   | NPN-Transistor with pull-up BEC
+Q1          | 1     | C13871   | biased NPN-Transistor 
 Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
-R1, R2, R5  | 3     | C2930406 | 12K resistor SMD 1206
-R3, R4, R8  | 3     | C229609  | 3K resistor SMD 1206
-R6          | 1     | C3000586 | 6K resistor SMD 1206
-R7          | 1     | C3000586 | 4.8k resistor SMD 1206
-R9          | 1     | C352163  | 0K resistor SMD 1206
+Q4          | 1     | C454937  | biased PNP-Transistor
+R1, R2, R5  | 3     | C136874  | 15K resistor SMD 1206
+R3          | 1     | C132648  | 3K resistor SMD 1206
+R4          | 1     | C870818  | 5K resistor SMD 1206
+R6          | 1     | C137115  | 7,5K resistor SMD 1206
+R7          | 1     | C870859  | 6k resistor SMD 1206
+R8          | 1     | C706412  | 3,75K resistor SMD 1206
 SW1         | 1     | C15781   | DIP6 Switch THT 4 buttons 2.54mm
-U1          | 1     | C235991  | NCP1579 DC-DC Controller
-
-If the NCP1579 is not available, probably ISL6545, NCP1587 or L6726 will work
-as well, but they haven't been tested yet.
+U1          | 1     | C2657973 | ISL6545 DC-DC Controller
 
 The inductor doesn't need to be very exact, anything between 2.5µH and 4.7µH
 should work, but the sweet point is at around 3.3µH. The inductor can be self
