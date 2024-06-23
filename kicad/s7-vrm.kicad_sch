@@ -5673,7 +5673,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SW_DIP_x04"
+		(property "Value" "SW_DIP_x05"
 			(at 247.65 128.27 90)
 			(effects
 				(font
