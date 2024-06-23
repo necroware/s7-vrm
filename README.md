@@ -45,7 +45,7 @@ Voltage Type | J1 Pos.  | CPU examples
 Single       | 1-3, 2-4 | Intel Pentium, AMD K5, Winchip C6, Cyrix M1
 Dual         | 1-2, 3-4 | Intel Pentium MMX, AMD K6, Cyrix M1L/MII
 
-## CPU Voltage Selection
+## CPU Voltage Selection (SW1)
 
 __WARNING__: Single voltage CPUs are designed to run at 3.3-3.5V everything
 below that value could potentially make your system unstable. Everything above
