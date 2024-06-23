@@ -146,13 +146,36 @@ This module should run with all mainboards, which provide the VRM module header
 as specified in Intel Pentium Mainboard Design Guidelines. Most of such boards
 were based on Intel Triton (i430FX) and VIA Apolo Master (MV series) chipsets,
 but there were also quite a lot of later boards with newer chipsets (f.e.
-i430VX), which supported such an external VRM as well. So far this VRM was
-tested using various CPUs and voltages on following mainboards:
+i430VX), which supported such an external VRM as well.
 
-Manufacturer | Model           
--------------|---------------------
-Asus         | P/I-P55TP4XE(G)
-Gigabyte     | GA-586-ATE/P
+Most of the mainboards which were equipped with a VRM option, were produced
+before Intel Pentium MMX, AMD K6 and other dual-voltage CPUs were officially
+available. However those CPUs have changed the multiplier selection behavior of
+CPU pins BF0/1. Not only a new pin was introduced for higher multipliers, but
+also pin BF0 was not pulled up internally anymore as it has been done on
+single-voltage CPUs before. This ended up in wrong multiplier detection on newer
+CPUs like Pentium MMX 200, which would be suddenly detected as 166MHz one. This
+can be fixed by adding a 10k pull-up resistor to the CPU between pin BF0 I/O
+VCC. In the following table of tested mainboards you can find a column R+BF0
+which tells if such a pull-up resistor had to be added to properly support the
+multiplier settings.
+
+Faster Super Socket 7 CPUs, like AMD K6-2 and newer added another multiplier
+selection pin BF2, which is not supported on those old mainboards at all. It
+can be added using another mod, but is actually not necessary. If the CPU
+multiplier is set to 2x, those newer CPUs would interpret it as 6x and for
+66MHz FSB go directly to 400MHz. However to be able to detect the CPU properly
+you would need to mod the BIOS. This is however optional, the system should
+work also with outdated BIOS. In such a case the CPU just would not be reported
+properly. 
+
+With that in mind this VRM was tested using various CPUs and voltages on
+following mainboards:
+
+Manufacturer | Model           | Chipset | R+BF0 | BIOS Mod
+-------------|-----------------|---------|-------|-------------
+Asus         | P/I-P55TP4XE(G) | i430FX  | Yes   | Yes
+Gigabyte     | GA-586-ATE/P    | i430FX  | Yes   | Yes
 
 ## License
 
