@@ -172,10 +172,10 @@ properly.
 With that in mind this VRM was tested using various CPUs and voltages on
 following mainboards:
 
-Manufacturer | Model           | Chipset | R+BF0 | BIOS Mod
--------------|-----------------|---------|-------|-------------
-Asus         | P/I-P55TP4XE(G) | i430FX  | Yes   | Yes
-Gigabyte     | GA-586-ATE/P    | i430FX  | Yes   | Yes
+Manufacturer | Model           | Chipset | R+BF0 | BIOS Mod | VRM Compatible
+-------------|-----------------|---------|-------|----------|-------------------
+Asus         | P/I-P55TP4XE(G) | i430FX  | Yes   | Yes      | Yes
+Gigabyte     | GA-586-ATE/P    | i430FX  | Yes   | Yes      | Yes
 
 ## License
 
