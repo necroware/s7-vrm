@@ -5515,7 +5515,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3,75K"
+		(property "Value" "3,74K"
 			(at 222.25 112.522 90)
 			(effects
 				(font
@@ -7071,7 +7071,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "242n"
+		(property "Value" "220n"
 			(at 109.855 113.03 0)
 			(effects
 				(font
@@ -7389,7 +7389,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3,75K"
+		(property "Value" "3,74K"
 			(at 236.22 112.522 90)
 			(effects
 				(font
@@ -7892,7 +7892,7 @@
 			(uuid "8fdfcd89-4e8e-415c-aecd-276e0b2a3edd")
 		)
 		(instances
-			(project ""
+			(project "s7-vrm"
 				(path "/30f15357-ce1d-48b9-93dc-7d9b1b2aa048"
 					(reference "J2")
 					(unit 1)
@@ -8312,7 +8312,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3,75K"
+		(property "Value" "3,74K"
 			(at 238.76 112.522 90)
 			(effects
 				(font

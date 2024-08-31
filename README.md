@@ -109,6 +109,11 @@ and the inductor L1. If your regulator shows stability issues or not starting
 at all, try to remove the capacitor C8. If you change any other parts C7, C8 and
 R1 have to be adapted accordingly.
 
+When generating Gerber files:
+
+* The title font is "Edo SZ HQ", available online.
+* The board dimensions are 53x62mm.
+
 ## Bill of materials
 
 Part        | Count | LCSC#    | Comment
@@ -117,7 +122,7 @@ C1, C15     | 2     | C13585   | 10u capacitor SMD 1206
 C2, C14     | 2     | C51205   | 4.7u capacitor SMD 1206              
 C3, C6, C13 | 3     | C696845  | 0.1u capacitor SMD 1206
 C4, C5      | 2     | C407963  | 2200u capacitor TH Radial D10.0mm, P5.00mm
-C7          | 1     | C107186  | 242n capacitor SMD 1206
+C7          | 1     | C107186  | 220n capacitor SMD 1206
 C8          | 1     | C577176  | 39p capacitor SMD 1206
 C9-C12      | 4     | C407858  | 1000u capacitor TH Radial D8.0mm, P3.5mm
 D1          | 1     | C109000  | Switching diode
@@ -128,7 +133,7 @@ Q1          | 1     | C13871   | NPN-BEC biased transistor
 Q2, Q3      | 2     | C496603  | N-MOSFET GDS at least 15A
 Q4          | 1     | C454937  | PNP-BEC biased transistor 
 R1, R2, R6  | 3     | C136874  | 15K resistor SMD 1206
-R3, R8, R9  | 3     | C706412  | 3,75K resistor SMD 1206
+R3, R8, R9  | 3     | C706412  | 3,74K resistor SMD 1206
 R4          | 1     | C870818  | 5K resistor SMD 1206
 R5          | 1     | C137314  | 30K resistor SMD 1206
 R7          | 1     | C137115  | 7,5K resistor SMD 1206
